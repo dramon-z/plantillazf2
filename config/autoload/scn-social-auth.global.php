@@ -35,7 +35,7 @@ $settings = array(
      *
      * Please specify if Facebook is enabled
      */
-    'facebook_enabled' => true,
+    //'facebook_enabled' => true,
 
     /**
      * Facebook Scope

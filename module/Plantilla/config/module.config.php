@@ -2,7 +2,8 @@
 return array (
 		'controllers' => array (
 				'invokables' => array (
-						'Plantilla\Controller\Plantilla' => 'Plantilla\Controller\PlantillaController'
+						'Plantilla\Controller\Plantilla' => 'Plantilla\Controller\PlantillaController',
+						'Plantilla\Controller\Test' => 'Plantilla\Controller\TestController'
 				) 
 		),
 		'router' => array (
@@ -36,7 +37,26 @@ return array (
 												'type' => 'Wildcard' 
 										) 
 								) 
-						)
+						),
+					'test' => array (
+								'type' => 'Segment',
+								'options' => array (
+										'route' => '/test[/:action]',
+										'constraints' => array (
+												'action' => '[a-zA-Z][a-zA-Z0-9_-]*' 
+										),
+										'defaults' => array (
+												'controller' => 'Plantilla\Controller\Test',
+												'action' => 'index' 
+										) 
+								),
+								'may_terminate' => true,
+								'child_routes' => array (
+										'wildcard' => array (
+												'type' => 'Wildcard' 
+										) 
+								) 
+						),
 				)
 				 
 		),

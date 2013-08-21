@@ -10,5 +10,18 @@
 
 
 <script type="text/javascript">
+	$('#btn-boton').click(function(){
+		$.ajax({
+			 type: "POST",
+			 url: '<?php echo $this->url('test',array('action'=>'acltest'));?>',
+			 data: {data:$('#txt-search').val()},
+			 success: function(data,a,b){
+				 if(data.success){
+						console.log(data);
+				 }				 
+			 },
+			 dataType: 'json'
+		 });
+	});
 
 </script>

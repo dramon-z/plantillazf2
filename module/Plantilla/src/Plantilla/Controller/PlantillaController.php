@@ -9,7 +9,9 @@ use Zend\Session\Container;
 use Zend\Http\Client as Zend_Http_Client;
 
 class PlantillaController extends AbstractActionController {
-
+	
+	const ROUTE_LOGIN        			  = 'zfcuser/login';
+	
 	public function onDispatch( \Zend\Mvc\MvcEvent $e )
 		{
 
@@ -26,6 +28,16 @@ class PlantillaController extends AbstractActionController {
 	public function indexAction() {	
 			$view = new ViewModel(	);
 		return $view;
+	}
+	/**
+	*repsuesta json
+	*
+	*/
+	public function acltestAction(){
+		$request = $this->getRequest ();
+		$params = $request->getPost();
+		$params = $this->params()->fromPost();
+		return new JsonModel(array('success'=>true,'object'=>$params,));
 	}
 	
 	

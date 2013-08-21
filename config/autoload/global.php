@@ -24,7 +24,7 @@ return array(
 	),
 	'db' => array(
 			'driver' => 'mysqli',
-			'dsn'            => 'mysql:dbname=plantilla;host=localhost',
+			'dsn'=> 'mysql:dbname=plantilla;host=localhost',
 			'schema'	=> 'plantilla',
 			'host'=>'192.168.1.67',
 			'driver_options' => array(

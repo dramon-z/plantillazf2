@@ -12,7 +12,9 @@ use Zend\Db\RowGateway\RowGateway;
 abstract class AbstractObject 
 	implements AdapterAwareInterface, ServiceLocatorAwareInterface, ObjectDbInterface 
 	{
-	
+	public function getData(){
+		return $this->data;
+	}
 		
 	/**
 	 * @var Adapter
@@ -309,6 +311,17 @@ abstract class AbstractObject
 		$this->rowGateway->delete();
 	}
 	
+	public function listAll(){
+		$this->initialize();
+		
+		$strSQL = "SELECT * FROM ". $this->tableName;
+
+		$this->resultSet = $this->adapter->query($strSQL)->execute();
+		
+		$this->resultSet->buffer();
+		return $this->resultSet->count();
+		
+	}
 	
 	public function loadById($id){
 		$this->initialize();
@@ -355,6 +368,7 @@ abstract class AbstractObject
 	
 	
 	public function next(){
+		$this->clean();
 		if ($this->resultSet->count() >= 1){
 				
 			if ($this->resultSet->valid()){
@@ -375,6 +389,16 @@ abstract class AbstractObject
 		
 	}
 	
+	public function clean() {
+		$vars = $this->vars;
+	
+			
+		if (is_array($vars)){
+			foreach ( $vars as $var ){
+				$var->setValue('');
+			}
+		}	
+	}
 	public function rewind(){
 	
 				$this->resultSet->rewind();
