@@ -27,7 +27,12 @@
 </head>
 
 <body id="top">
-
+<? if($this->zfcUserDisplayName()){?>
+<?php echo 'Usuario: '.$this->zfcUserDisplayName(); ?>
+  <br>
+  <a href="<?php echo $this->url('zfcuser/logout');?>"  title="Logout">Salir</a> 
+  <br>
+<?}?>
   Layaout
 		<!-- Begin of #main-content -->
 		<div id="main-content">

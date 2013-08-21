@@ -24,8 +24,8 @@ return array(
 	),
 	'db' => array(
 			'driver' => 'mysqli',
-			'dsn'            => 'mysql:dbname=mixong;host=localhost',
-			'schema'	=> 'mixong',
+			'dsn'            => 'mysql:dbname=plantilla;host=localhost',
+			'schema'	=> 'plantilla',
 			'host'=>'192.168.1.67',
 			'driver_options' => array(
 					PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
