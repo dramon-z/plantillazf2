@@ -1,0 +1,55 @@
+﻿primer commit
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   module/Plantilla/Module.php
+#	new file:   module/Plantilla/config/module.config.php
+#	new file:   module/Plantilla/language/ar_SY.mo
+#	new file:   module/Plantilla/language/cs_CZ.mo
+#	new file:   module/Plantilla/language/de_DE.mo
+#	new file:   module/Plantilla/language/en_US.mo
+#	new file:   module/Plantilla/language/es_ES.mo
+#	new file:   module/Plantilla/language/fr_CA.mo
+#	new file:   module/Plantilla/language/fr_FR.mo
+#	new file:   module/Plantilla/language/it_IT.mo
+#	new file:   module/Plantilla/language/ja_JP.mo
+#	new file:   module/Plantilla/language/nb_NO.mo
+#	new file:   module/Plantilla/language/nl_NL.mo
+#	new file:   module/Plantilla/language/pl_PL.mo
+#	new file:   module/Plantilla/language/pt_BR.mo
+#	new file:   module/Plantilla/language/ru_RU.mo
+#	new file:   module/Plantilla/language/tr_TR.mo
+#	new file:   module/Plantilla/language/zh_CN.mo
+#	new file:   module/Plantilla/language/zh_TW.mo
+#	new file:   module/Plantilla/src/Plantilla/Controller/PlantillaController.php
+#	new file:   module/Plantilla/src/Plantilla/DAO/Object/AbstractObject.php
+#	new file:   module/Plantilla/src/Plantilla/DAO/Object/ColumnObject.php
+#	new file:   module/Plantilla/src/Plantilla/DAO/Object/Db/ObjectMetadataInterface.php
+#	new file:   module/Plantilla/src/Plantilla/DAO/Object/Db/ObjectMetadataTrait.php
+#	new file:   module/Plantilla/src/Plantilla/DAO/Object/ObjectDbInterface.php
+#	new file:   module/Plantilla/src/Plantilla/DAO/Object/ObjectDbTrait.php
+#	new file:   module/Plantilla/view/error/404.phtml
+#	new file:   module/Plantilla/view/error/index.phtml
+#	new file:   module/Plantilla/view/layout/layout-ajax.phtml
+#	new file:   module/Plantilla/view/layout/layout-place.phtml
+#	new file:   module/Plantilla/view/layout/layout.phtml
+#	new file:   module/Plantilla/view/plantilla/plantilla/index.phtml
+#	new file:   public/.htaccess
+#	new file:   public/css/bootstrap-responsive.min.css
+#	new file:   public/css/bootstrap.min.css
+#	new file:   public/css/style.css
+#	new file:   public/img/cross-script.png
+#	new file:   public/img/favicon.ico
+#	new file:   public/img/glyphicons-halflings-white.png
+#	new file:   public/img/glyphicons-halflings.png
+#	new file:   public/img/star.png
+#	new file:   public/img/zf2-logo.png
+#	new file:   public/index.php
+#	new file:   public/js/bootstrap.min.js
+#	new file:   public/js/html5.js
+#	new file:   public/js/jquery.min.js
+#
+
