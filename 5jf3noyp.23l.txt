@@ -1,0 +1,17 @@
+﻿othe
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   module/Plantilla/config/acl.role.php
+#	new file:   module/Plantilla/src/Plantilla/Controller/TestController.php
+#	new file:   module/Plantilla/src/Plantilla/DAO/Permiso.php
+#	new file:   module/Plantilla/src/Plantilla/DAO/PermisoRol.php
+#	new file:   module/Plantilla/src/Plantilla/DAO/Rol.php
+#	new file:   module/Plantilla/src/Plantilla/DAO/User.php
+#	new file:   module/Plantilla/src/Plantilla/DAO/UserRol.php
+#	new file:   module/Plantilla/src/Plantilla/Servicios/PermisoServicio.php
+#
+
